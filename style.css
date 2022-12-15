@@ -6,10 +6,17 @@ body {
     margin: 7rem;
 }
 
+h1 {
+    font-size: 50px;
+}
 
+hr {
+    border-width: 0;
+    margin-bottom: 5px;
+}
 
 .normal {
-    font-family: Marck Script; font-size: 75px;
+    font-family: Marck Script;
     animation-name: CHRISTMAS, CHRISTMAS_shadow;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -17,7 +24,7 @@ body {
 }
 
 .krampus {
-    font-family: Marck Script; font-size: 75px;
+    font-family: Marck Script;
     animation-name: KRAMPU, KRAMPU_shadow;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -61,11 +68,25 @@ a:visited {
 }
 
 img {
-    width: 35%;
-    height: auto;
+    width: auto;
+    height: 30vh;
     border-radius: 50px;
+    justify-content: space-evenly;
+    display: flex;
 }
 
 @media (min-width: 800px) {
+    img {
+        flex-direction: row;
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
+    h1 {
+        font-size: 75px;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
