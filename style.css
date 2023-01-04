@@ -6,7 +6,7 @@
      margin: 6rem;
 }
  h1 {
-     font-size: 100px;
+     font-size: 75px;
      display: flex;
      justify-content: space-evenly;
 }
@@ -112,7 +112,7 @@
          justify-content: space-evenly;
     }
      h1 {
-         font-size: 50px;
+         font-size: 30px;
          display: flex;
          justify-content: space-evenly;
     }
@@ -130,13 +130,25 @@
 }
 
 @media (min-width: 1900px) {
-    body {
-    margin: 7rem;
-  }
+     body {
+         margin: 7rem;
+    }
+    
+     p {
+      font-size: 30px;
+     }
+     
+     a {
+      font-size: 30px;
+     }
+     
+     h {
+      font-size: 100px;
+     }
   
      img {
          flex-direction: row;
-         height: 35vh;
+         height: 45vh;
          display: flex;
          justify-content: space-evenly;
     }
