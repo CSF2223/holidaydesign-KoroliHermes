@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Signika:wght@300&display=swap');
+ body {
+     overflow-x: hidden;
+     background-color: #1F3B4D;
+     color: white;
+     margin: 6rem;
+}
+ h1 {
+     font-size: 75px;
+     display: flex;
+     justify-content: space-evenly;
+}
+ hr {
+     opacity: 0;
+     border-width: 0;
+     margin-bottom: 15px;
+}
+ .normal {
+     font-family: Marck Script;
+     animation-name: CHRISTMAS, CHRISTMAS_shadow;
+     animation-duration: 7s;
+     animation-iteration-count: infinite;
+     text-shadow: 0px 6px 7px red;
+}
+ .krampus {
+     font-family: Marck Script;
+     animation-name: KRAMPU, KRAMPU_shadow;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     text-shadow: 0px 6px 7px darkred;
+}
+ @keyframes CHRISTMAS {
+     0% {
+        color: red;
+    }
+     50% {
+        color: lime;
+    }
+     100% {
+        color: red;
+    }
+}
+ @keyframes CHRISTMAS_shadow {
+     0% {
+        text-shadow: 0px 6px 7px red;
+    }
+     50% {
+        text-shadow: 0px 6px 7px lime;
+    }
+     100% {
+        text-shadow: 0px 6px 7px red;
+    }
+}
+ @keyframes KRAMPU {
+     0% {
+        color: darkred;
+    }
+     50% {
+        color: darkgreen;
+    }
+     100% {
+        color: darkred;
+    }
+}
+ @keyframes KRAMPU_shadow {
+     0% {
+        text-shadow: 0px 6px 7px darkred;
+    }
+     50% {
+        text-shadow: 0px 6px 7px darkgreen;
+    }
+     100% {
+        text-shadow: 0px 6px 7px darkred;
+    }
+}
+ p {
+     font-family: Signika;
+}
+ a:link {
+     color: red;
+}
+ a:visited {
+     color: red;
+}
+ .snow {
+     margin-left: -150px;
+     width: 1450px;
+     margin-bottom: -115px;
+     border-radius: 0px;
+     z-index: 5;
+}
+ img {
+     width: auto;
+     height: 40vh;
+     border-radius: 30px;
+     justify-content: space-evenly;
+     display: flex;
+}
+ .flakes {
+     z-index: 4;
+}
+
+@media (max-width: 800px) {
+   body {
+   margin: 3rem;
+  }
+  
+     img {
+         flex-direction: row;
+         height: 35vh;
+         display: flex;
+         justify-content: space-evenly;
+    }
+     h1 {
+         font-size: 30px;
+         display: flex;
+         justify-content: space-evenly;
+    }
+    .snow {
+         margin-left: -150px;
+         width: 800px;
+         margin-bottom: -115px;
+         border-radius: 0px;
+         z-index: 5;
+    }
+    
+     .flakes {
+         z-index: 4;
+    }
+}
+
+@media (min-width: 1900px) {
+     body {
+         margin: 7rem;
+    }
+    
+     p {
+      font-size: 30px;
+     }
+     
+     a {
+      font-size: 30px;
+     }
+     
+     h {
+      font-size: 100px;
+     }
+  
+     img {
+         flex-direction: row;
+         height: 45vh;
+         display: flex;
+         justify-content: space-evenly;
+    }
+     h1 {
+         font-size: 150px;
+         display: flex;
+         justify-content: space-evenly;
+    }
+    .snow {
+         margin-left: -150px;
+         width: 2000px;
+         margin-bottom: -115px;
+         border-radius: 0px;
+         z-index: 5;
+    }
+    
+     .flakes {
+         z-index: 4;
+    }
+}
